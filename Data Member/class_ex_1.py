@@ -9,3 +9,11 @@ class Student:
 
 #main Program
 print("Course name=",Student.crs)
+
+#ClassLevelDataMembersEx2.py
+class Student:pass
+
+
+#main Program
+Student.crs="PYTHON" # Here crs is called Class Level Data Member
+print("Course name=",Student.crs)
