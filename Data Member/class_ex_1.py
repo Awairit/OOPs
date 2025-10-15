@@ -16,4 +16,4 @@ class Student:pass
 
 #main Program
 Student.crs="PYTHON" # Here crs is called Class Level Data Member
-print("Course name=",Student.crs)
+print("Course name={}".format(Student.crs))
