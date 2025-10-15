@@ -17,7 +17,7 @@ class Student:
 s1=Student()
 s2=Student()
 #Call the Instance Method w.r.t Object
-print("\n\nID of s1 Object in Main Program=",id(s1))
+print("\nID of s1 Object in Main Program=",id(s1))
 s1.getvals()
 print("ID of s2 Object in Main Program=",id(s2))
 s2.getvals()
