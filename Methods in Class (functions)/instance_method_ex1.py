@@ -7,15 +7,15 @@ i.instance_method()
 
 #Prohgram for Demonstrating Instance Method
 #InstanceMethodEx1.py
-class Student:
+class Student1:
     def getvals(self):
         print("ID of Current in getvals()=",id(self))
 
 
 #Main Program
 #Create Two Objects
-s1=Student()
-s2=Student()
+s1=Student1()
+s2=Student1()
 #Call the Instance Method w.r.t Object
 print("\nID of s1 Object in Main Program=",id(s1))
 s1.getvals()
@@ -27,7 +27,7 @@ s2.getvals()
 
 #Program for Reading the Values of Student by using Instance Method in OOPs
 #InstanceMethodEx2.py
-class Student:
+class Student2:
     def readstudvals(self,objinfo):
         print("Enter {} Object Information".format(objinfo))
         self.sno=int(input("\tEnter Student Number:"))
@@ -43,8 +43,8 @@ class Student:
         print("-" * 50)
 #Main Program
 print("---------------------------------------------------")
-s1=Student()
-s2=Student()
+s1=Student2()
+s2=Student2()
 print("Content of s1 before reading=",s1.__dict__)
 print("Content of s2 before reading=",s2.__dict__)
 print("---------------------------------------------------")
