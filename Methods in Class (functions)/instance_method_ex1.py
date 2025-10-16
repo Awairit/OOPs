@@ -5,6 +5,8 @@ class InstanceMethodEx1:
 i=InstanceMethodEx1()
 i.instance_method()
 
+#=============================================================================================
+
 #Prohgram for Demonstrating Instance Method
 #InstanceMethodEx1.py
 class Student1:
