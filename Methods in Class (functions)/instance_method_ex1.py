@@ -146,3 +146,27 @@ add=Add()
 add.values()
 add.sum()
 add.result()
+
+#===================================================================================
+
+#Program for adding  Two Number by using Classes and Objects
+class Add:
+    def values(self):
+        self.a=float(input("Enter a number: "))
+        self.b=float(input("Enter another number: "))
+    def sum(self):
+        self.c=self.a+self.b
+    def result(self):
+        add.values()
+        add.sum()
+        print("="*25)
+        print("Sum of {} and {} is {}".format(self.a, self.b, self.c))
+
+        print("-"*25)
+
+        self.values()
+        self.sum()
+        print("="*25)
+        print("Sum of {} and {} is {}".format(self.a, self.b, self.c))
+add=Add()
+add.result()
