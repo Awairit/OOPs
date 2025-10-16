@@ -130,3 +130,19 @@ s2.readstudvals("Second")
 print("---------------------------------------------------")
 #call instance method dispstudvals() for displying the values of s2
 s2.dispstuddet("Second")
+
+#==================================================================================
+
+#Program for adding  Two Number by using Classes and Objects
+class Add:
+    def values(self):
+        self.a=float(input("Enter a number: "))
+        self.b=float(input("Enter another number: "))
+    def sum(self):
+        self.c=self.a+self.b
+    def result(self):
+        print("Sum of {} and {} is {}".format(self.a, self.b, self.c))
+add=Add()
+add.values()
+add.sum()
+add.result()
