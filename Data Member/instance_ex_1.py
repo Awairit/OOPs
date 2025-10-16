@@ -7,6 +7,8 @@ s2.sno=200
 print("\nMy Class Name is InstanceDataMember: {} and I'm from Obj 'InstanceDataMember()' of Class with name as s1 Variable".format(s1.sno))
 print("My Class Name is InstanceDataMember: {} and I'm from Obj 'InstanceDataMember()' of Class with name as s2 Variable\n".format(s2.__dict__))
 
+#================================================================================================================================================
+
 #Program for Storing sno,name and marks by using Classes and objects
 #InstanceDataMembersEx1.py
 class Student:pass
@@ -40,6 +42,9 @@ print("\tStudent Number={}".format(s2.stno))
 print("\tStudent Name={}".format(s2.sname))
 print("\tStudent Marks={}".format(s2.marks))
 print("-"*50)
+
+#=======================================================================================================================
+
 
 #Program for Storing sno,name and marks by using Classes and objects
 #InstanceDataMembersEx2.py
