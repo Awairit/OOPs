@@ -170,3 +170,32 @@ class Add:
         print("Sum of {} and {} is {}".format(self.a, self.b, self.c))
 add=Add()
 add.result()
+
+#==============================================================================
+
+#Program for generating Mul table for a Given Number by using Classes and objects
+#InstanceMethodEx6.py
+class MulTable:
+    def getvals(self):
+        while(True):
+            try:
+                self.n=int(input("Enter a Number for generating Mul Table:"))
+            except ValueError:
+                print("\tDon't enter alnums/strs/symbols-try again")
+            else:
+                self.table()
+                break
+    def table(self):
+        if(self.n<=0):
+            print("\t{} is Invalid Input".format(self.n))
+        else:
+            print("-"*50)
+            print("Mul Table for:{}".format(self.n))
+            print("-" * 50)
+            for i in range(1,11):
+                print("\t{} x {} = {}".format(self.n,i,self.n*i))
+            print("-" * 50)
+
+#Main Program
+mt=MulTable()
+mt.getvals()
