@@ -102,6 +102,24 @@ print("Student City=",Student.city)
 
 #======================================================================================================
 
+class Student2:
+    @classmethod
+    def getcrs(cls):
+        cls.crs="PYTHON" # OR cls.crs="PYTHON
+        cls.getcity()
+    @classmethod
+    def getcity(cls):
+        print("Student wanted to learn",cls.crs) # OR cls.city="HYD"
+
+#main Program
+Student2.getcrs() # Calling Class Level Method
+# Student.getcity()
+
+print("Student Course =",Student2.crs)
+# print("Student City=",Student.city)
+
+#======================================================================================================
+
 #Program for Cal area of Circle by using Classes and Objects
 #ClassLevelMethodEx3.py
 class Circle:
