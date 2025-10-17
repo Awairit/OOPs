@@ -45,36 +45,43 @@
 #=======================================================================================================================
 
 class ClassDataMethodEx4:
-    @classmethod
 
-    def subject(cls, perimeter):
+    # city = None
+
+    @classmethod
+    def subject(cls):
         cls.subject2="Python"
+        specialist = "Dr. Irshad"
         try:
-            ClassDataMethodEx4.rollnumber= int(input("Enter the Roll Number: ")) #ClassDataMethodEx4.rollnumber = cls.rollnumber
+            cls.rollnumber = int(input("Enter the Roll Number: "))
+            cls.name=input("Enter the Student Name: ")
+            # ClassDataMethodEx4.rollnumber= int(input("Enter the Roll Number: ")) #ClassDataMethodEx4.rollnumber = cls.rollnumber
         except Exception as e:
             print(e)
         else:
-            print(input("Enter the Student Name: "))
-            print("Enter the Roll Number: {}".format(cls.rollnumber))
-            print("Roll Number =",ClassDataMethodEx4.rollnumber)
+            print("The Name is: {}".format(cls.name))
+            print("Roll Number is: {}".format(cls.rollnumber))
+            # print("Roll Number =",ClassDataMethodEx4.rollnumber)
 
         finally:
             print("The Subject is: {}".format(cls.subject2))
-            print("The FrameWork is: {}" .format(perimeter))
-    #     cls.framework()
-    # @classmethod
-    # def framework(self ):
-    #     print("The Framework is: {} and swift".format(ClassDataMethodEx4.framework))
+
+            print("The FrameWork is: {}" .format("Django"))
+
+        cls.framework(specialist)
+
+    @classmethod
+    def framework(cls, instructor):
+        print("The Framework is Taught by: {} specialist".format(instructor))
+        ClassDataMethodEx4.city = "HYD"  # OR cls.city="HYD"
 
 
 obj_call=ClassDataMethodEx4()
-obj_call.subject("Django")
+obj_call.subject()
+print("Student City=",ClassDataMethodEx4.city)
 
-print("="*30)
+print("Eager to learn {}" .format(obj_call.subject2))
 
-print(obj_call.subject2)
 
-print("="*30)
-
-ClassDataMethodEx4.subject("Swift")
+# ClassDataMethodEx4.subject("Swift")
 
