@@ -99,3 +99,23 @@ class Student:
 Student.getcrs() # Calling Class Level Method
 print("Student Course=",Student.crs)
 print("Student City=",Student.city)
+
+#======================================================================================================
+
+#Program for Cal area of Circle by using Classes and Objects
+#ClassLevelMethodEx3.py
+class Circle:
+    @classmethod
+    def getPI(cls):
+        cls.PI=3.14
+        return cls.PI
+    def getrad(self):
+        self.r=float(input("Enter Radius:"))
+    def calarea(self):
+        self.ac=Circle.getPI()*self.r**2
+        print("Area of Cicle={}".format(self.ac))
+
+#Main Program
+co=Circle()
+co.getrad()
+co.calarea()
