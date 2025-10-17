@@ -82,6 +82,20 @@ print("Student City=",ClassDataMethodEx4.city)
 
 print("Eager to learn {}" .format(obj_call.subject2))
 
+#=======================================================================================================
 
-# ClassDataMethodEx4.subject("Swift")
+#Program for Demonstrating Class Level Method
+#ClassLevelMethodEx2.py
+class Student:
+    @classmethod
+    def getcrs(cls):
+        cls.crs="PYTHON" # OR Student.crs="PYTHON
+        cls.getcity() # OR Student.getcity()
+    @classmethod
+    def getcity(cls):
+        Student.city="HYD" # OR cls.city="HYD"
 
+#main Program
+Student.getcrs() # Calling Class Level Method
+print("Student Course=",Student.crs)
+print("Student City=",Student.city)
