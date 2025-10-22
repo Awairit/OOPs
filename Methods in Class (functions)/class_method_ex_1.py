@@ -157,3 +157,28 @@ class Circle2:
 
 circle_area=Circle2()
 circle_area.cal_area()
+
+#=====================================================================================================
+
+class Circle3:
+    PI = None
+
+    def __init__(self):
+        self.r = None
+        self.area_of_circle = None  #Sujested by IDE
+
+    @classmethod
+    def getPi(cls): #Function name should be lowercase
+        Circle3.PI=3.14
+
+    def getRad(self): #Function name should be lowercase
+        self.r=float(input("Enter Radius:"))
+
+    def cal_area(self):
+        self.getRad()
+        Circle3.getPi()
+        self.area_of_circle=Circle3.PI*self.r ** 2
+        print("Area of Circle={}".format(self.area_of_circle))
+
+#Main Program
+Circle3().cal_area() #Calling Instance Method with Name-Less Object
