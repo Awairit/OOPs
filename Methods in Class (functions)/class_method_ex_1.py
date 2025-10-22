@@ -137,3 +137,23 @@ class Circle:
 co=Circle()
 co.getrad()
 co.calarea()
+
+#======================================================================================================
+
+
+class Circle2:
+    @classmethod
+    def getPi(cls):
+        Circle2.PI=3.14
+
+    def getRad(self):
+        self.r=float(input("Enter Radius:"))
+
+    def cal_area(self):
+        self.getRad()
+        Circle2.getPi()         #if we dont return data member from class level data method (function) we need to call class level data method as "ClassName.class_level_data_method_name()" and then we can access class level data member directly as "ClassName.class_level_data_member"
+        self.Area = Circle2.PI * self.r ** 2
+        print("Area of Circle={}".format(self.Area))
+
+circle_area=Circle2()
+circle_area.cal_area()
