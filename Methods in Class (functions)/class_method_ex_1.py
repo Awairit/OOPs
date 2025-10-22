@@ -182,3 +182,22 @@ class Circle3:
 
 #Main Program
 Circle3().cal_area() #Calling Instance Method with Name-Less Object
+
+#====================================================================================================
+
+#Program for Cal area of Circle by using Classes and Objects
+#ClassLevelMethodEx6.py
+class Circle4:
+    @classmethod
+    def getPI(cls):
+        cls.PI=3.14
+        Circle4().getrad() # Calling Instance Method from Class Level Method
+    def getrad(self):
+        self.r=float(input("Enter Radius:"))
+        self.calarea()
+    def calarea(self):
+        self.ac=Circle4.PI*self.r**2
+        print("Area of Cicle= ", self.ac)
+
+#Main Program
+Circle4.getPI() # Calling Class Level Method w.r.t Class Name
